@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.chat-container {
+    width: 350px; /* Set a fixed width for the chat */
+    background-color: white; /* White background for chat */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    overflow: hidden; /* Keep contents within rounded corners */
+    position: fixed; /* Fixed position for the chat */
+    bottom: 20px; /* Position from the bottom */
+    right: 20px; /* Position from the right */
+}
+
+.chat-header {
+    background-color: #4caf50; /* Green header */
+    color: white; /* White text */
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-messages {
+    max-height: 300px; /* Limit height of messages */
+    overflow-y: auto; /* Scroll for overflowing messages */
+    padding: 10px;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.message .time {
+    font-size: 0.8em;
+    color: gray; /* Light gray for time */
+}
+
+.message .sender {
+    font-weight: bold; /* Bold sender name */
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for input area */
+    border-top: 1px solid #ccc; /* Divider line */
+}
+
+.chat-input input {
+    flex: 1; /* Take available space */
+    padding: 10px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.chat-input button {
+    background-color: #4caf50; /* Green button */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    margin-left: 10px;
+}
